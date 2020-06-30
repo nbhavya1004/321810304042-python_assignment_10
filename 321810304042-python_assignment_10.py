@@ -7,22 +7,22 @@
 ##      1.      Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
 for i in range(1,101):
-	if(i%3==0):
-	       print("fizz")
+	if i%3==0 and i%5==0:
+				print("fizzbuzz") 
 	       
-	elif(i%5==0):
+	elif i%5==0:
 			print("buzz")
 			
-	elif(i%3==0 and i%5==0):
-				print("fizzbuzz")
+	elif i%3==0:
+	       print("fizz")
 				
 	else:
 					print(i)
+
+
+
 					
-					
-					
-					
-					
+										
 ##       2.      Write a Python program to remove consecutive duplicates from list.
 
 x=[1,2,2,3,3,3,4,4,4,5,5,5,6,6,6,8,1]
